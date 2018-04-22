@@ -87,3 +87,14 @@ password_url = reverse('name_for_your_url')
 ```html
 <p>Please go <a href="{% url 'name_for_url' %}">here</a></p>
 ```
+
+## Point Root URLConf at App's URL module
+Add following lines in your ***project/urls.py***
+```python
+from django.urls import include
+
+urlpatterns = [
+    path('sub_url_for_your_app', include('your_app.urls'))
+]
+```
+*include()* allows referencing other URLConfs
