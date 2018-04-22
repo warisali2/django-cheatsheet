@@ -34,3 +34,21 @@ These files are:
 python manage.py runserver [ip-address:port]
 ```
 If no address is given, it will run server on http://localhost:8000/.
+
+## Create an App
+```bash
+python manage.py startapp your_app_name
+```
+It creates following directory structure
+```
+├── your_app_name
+    ├── admin.py
+    ├── apps.py
+    ├── __init__.py
+    ├── migrations
+    │   └── __init__.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
+```
+**Note:** Apps can live anywhere on your *python path*.
