@@ -28,3 +28,7 @@ These files are:
 * **settings.py** Settings for this django project.
 * **urls.py** URLs declarations for this django project.
 * **wsgi.py** Entry point for WSGI (Web Server Gateway Interface) compatible servers to serve your project.
+
+## Run Development Server
+`python manage.py runserver [ip-address:port]'
+If no address is given, it will run server on http://localhost:8000/.
