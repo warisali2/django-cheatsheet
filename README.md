@@ -73,7 +73,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path(<url>, <view>, name=<name-for-your-url>)
+    path(url_to_view, your_view, name=name_for_your_url)
 ]
 ```
 *name* attribute is used to refer your view from somewhere else in your code. Even if you change the actual url, name will still refer to same view.
