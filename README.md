@@ -55,3 +55,12 @@ It creates following directory structure
 
 ## Projects vs Apps
 An app is a Web application that does something – e.g., a Weblog system, a database of public records or a simple poll app. A project is a collection of configuration and apps for a particular website. A project can contain multiple apps. An app can be in multiple projects.
+
+## Sample View
+Here is simplest possible view in django
+```python
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello django!!")
+```
