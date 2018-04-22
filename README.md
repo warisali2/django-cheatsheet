@@ -64,3 +64,16 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello django!!")
 ```
+
+## Map View to URL
+Create a ***urls.py*** file in your app's directory and add following lines
+```python
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path(<url>, <view>, name=<name-for-your-url>)
+]
+```
+*name* attribute is used to refer your view from somewhere else in your code. Even if you change the actual url, name will still refer to same view.
