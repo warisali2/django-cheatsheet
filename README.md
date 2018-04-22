@@ -30,5 +30,5 @@ These files are:
 * **wsgi.py** Entry point for WSGI (Web Server Gateway Interface) compatible servers to serve your project.
 
 ## Run Development Server
-`python manage.py runserver [ip-address:port]'
+`python manage.py runserver [ip-address:port]`
 If no address is given, it will run server on http://localhost:8000/.
