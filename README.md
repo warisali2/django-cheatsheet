@@ -76,4 +76,14 @@ urlpatterns = [
     path(url_to_view, your_view, name=name_for_your_url)
 ]
 ```
-*name* attribute is used to refer your view from somewhere else in your code. Even if you change the actual url, name will still refer to same view.
+*name* attribute is used to refer your view from somewhere else in your code. Even if you change the actual url, name will still refer to same view. For example
+
+**In Code**
+```python
+password_url = reverse('name_for_your_url')
+```
+
+**In template**
+```html
+<p>Please go <a href="{% url 'name_for_url' %}">here</a></p>
+```
