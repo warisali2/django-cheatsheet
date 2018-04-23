@@ -1,6 +1,16 @@
 # django-cheatsheet
 Django Cheatsheet
 
+## Table Of Contents
+* [Check Django Version](#check-django-version)
+* [Create Django Project](#create-django-project)
+* [Run Development Server](#run-development-server)
+* [Create an App](#create-an-app)
+* [Projects vs Apps](#projects-vs-apps)
+* [Sample View](#sample-view)
+* [Map View to URL](#map-view-to-url)
+* [Point Root URLConf at App's URL module](#point-root-urlconf-at-apps-url-module)
+
 ## Check Django Version
 ```bash
 python -m django --version
